@@ -6,9 +6,9 @@ import { Loader } from '../Loader';
 import { PeopleTable } from '../PeopleTable';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
-import { SomethingWrongError } from '../../errors&notifications/SomethingWrongError';
-import { NoPeopleOnTheServer } from '../../errors&notifications/NoPeopleOnTheServer';
-import { SearchCriteriaNotification } from '../../errors&notifications/SearchCriteriaNotification';
+import { SomethingWrongError } from '../../errorsAndNotifications/SomethingWrongError';
+import { NoPeopleOnTheServer } from '../../errorsAndNotifications/NoPeopleOnTheServer';
+import { SearchCriteriaNotification } from '../../errorsAndNotifications/SearchCriteriaNotification';
 
 export const PeoplePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
